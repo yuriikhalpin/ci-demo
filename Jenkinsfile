@@ -3,7 +3,7 @@ pipeline {
   stages {
     stage('Lint') {
       steps {
-        sh '''echo "Hello, Slurm!" && \\
+        sh '''sleep 5 && echo "Hello, Slurm!" && \\
 ls -la && \\
 echo "The code is okay"'''
       }
